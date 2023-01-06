@@ -1,0 +1,1 @@
+We are trying to build simple basic wrfile.10060*Your entries are: 100.0 and 60.0The result of all addition, subtraction, multiplication and division: {'add': 160.0, 'sub': 40.0, 'mult': 6000.0, 'div': 1.6666666666666667}

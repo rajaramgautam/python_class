@@ -7,8 +7,6 @@
 # Course : ENTD220
 # Instructor : Allen Jordan
 
-
-
 class Calculator:
     print('We are trying to build simple basic calculator.')
 
