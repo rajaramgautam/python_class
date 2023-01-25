@@ -152,3 +152,4 @@ print(len(mylist))
 # type()
 # From Python's perspective, list are defined as objects with the data type 'list':
 print(type(mylist))
+# Hello
