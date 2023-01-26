@@ -153,3 +153,85 @@ print(len(mylist))
 # From Python's perspective, list are defined as objects with the data type 'list':
 print(type(mylist))
 # Hello
+
+# The list() Constructor
+# It is also possible to use list() constructor when creating a new list
+
+
+# note the double round brackets
+thislist = list(("apple", "banana", "cherry"))
+
+print(thislist)
+
+# Python - Access List Items
+# printing the second item of the list
+print(thislist[1])
+
+# Negative Indexing means start from the end
+print(thislist[-1])
+
+# Range of Indexes
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+
+# in range of index last item is not included where as first is included
+print(thislist[2:5])
+
+print(thislist[:4])
+
+print(thislist[2:])
+
+print(thislist[-4: -1])
+
+# Check if item exists
+
+if "apple" in thislist:
+    print("Yes, Apple is in the list.")
+
+# Change List Items
+thislist[1] = "blackfruit"
+for item in thislist:
+    print(item)
+
+# inserting items as range
+thislist[1:3] = ["banana", "grapes"]
+print(thislist)
+
+# If we inserted more items than we replace, the new items will be inserted where we specified, and the remaining items will
+# move accordingly
+
+thislist[1:2] = ["orange", "plum"]
+
+for item in thislist:
+    print(item)
+
+# replacing the second and third value by one value
+thislist[1:3] = ["pomegranate"]
+for item in thislist:
+    print(item)
+
+
+# Python - Add List Items
+# Append Items
+# append at last
+
+thislist.append("papaya")
+
+for item in thislist:
+    print(item)
+
+# Insert Items
+# Insert item at a specified index
+
+print("Checking Insert")
+
+thislist.insert(2, "Dragon Fruit")
+for item in thislist:
+    print(item)
+
+# Extend List
+# To append elements from another list to the current list, we use extend() method
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)
+
+for item in thislist:
+    print(item)
