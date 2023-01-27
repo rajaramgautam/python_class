@@ -235,3 +235,60 @@ thislist.extend(tropical)
 
 for item in thislist:
     print(item)
+
+# Add any iterable
+# extend() method cab add any iterable object (tuples, sets, dictionaries etc.)
+
+thistuple = ("kiwi", "orange")
+
+thislist.extend(thistuple)
+
+print(thislist)
+
+# Removing Specified Item remove() method
+thislist.remove("apple")
+print(thislist)
+
+# pop() method removes the specified index.
+thislist.pop(2)
+print("After Popping")
+print(thislist)
+
+# del keyword removes the specified index:
+del thislist[-1]
+
+print("printing after delete")
+print(thislist)
+
+# deleting entire list
+# del thislist
+
+# printing after deleting list
+
+# print(thislist)
+
+# clear() method empties the list
+thislist.clear()
+
+print(thislist)
+
+# Python - Loop Lists
+# for loop
+
+thislist = ["apple", "banana", "cherry"]
+
+for item in thislist:
+    print(item)
+
+for i in range(5):
+    print(i)
+
+# while loop
+i = 0
+while i < len(thislist):
+    print(thislist[i])
+    i = i + 1
+
+# Looping Using List Comprehension
+# List Comprehension offer the shortest syntax for looping through lists:
+[print(x) for x in thislist]
