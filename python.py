@@ -292,3 +292,65 @@ while i < len(thislist):
 # Looping Using List Comprehension
 # List Comprehension offer the shortest syntax for looping through lists:
 [print(x) for x in thislist]
+
+# List Comprehension example
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = [x for x in fruits if "a" in x]
+print("newlist")
+print(newlist)
+
+newlist2 = [x for x in range(10)]
+print(newlist2)
+
+newlist = [x.upper() for x in fruits]
+print(newlist)
+
+newlist = ["hello" for x in fruits]
+
+print(newlist)
+
+newlist = [x if x != "banana" else "orange" for x in fruits]
+print(newlist)
+
+# Python - Sort Lists
+# Sort List Alphanumerically sort()
+
+print(fruits)
+
+fruits.sort()
+
+print(fruits)
+
+fruits.sort(reverse=True)
+
+print(fruits)
+
+# Customize Sort Function
+# You can also customize your own function by using the keyword argument key = function
+
+
+def myfunc(n):
+    return abs(n - 50)
+
+
+thislist = [100, 50, 65, 83, 21]
+thislist.sort(key=myfunc)
+print(thislist)
+
+# Case Insensitive Sort
+# By default sort() method is case insensitive, resulting in all capital letters being sorted before lower case letters
+
+thislist = ["banana", "orange", "Cherry", "Kiwi"]
+thislist.sort()
+print(thislist)
+
+# Luckily we can use built-in functions as key functions when sorting a list.
+# So if you want a case-insensitive sort function, use str.lower as a key function:
+
+thislist.sort(key=str.lower)
+print(thislist)
+
+# Reverse Order
+# reverse() method reverse the current sorting of the elements regardless of the alphabet.
+thislist.reverse()
+print(thislist)
