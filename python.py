@@ -355,3 +355,71 @@ print(thislist)
 thislist.reverse()
 print(thislist)
 # Let me see if I can push now.
+
+# Python - Copy Lists
+# copy()
+# Make a copy of a list with the copy() method:
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+# Another way to make a copy is to use the built-in method list()
+mylist = list(thislist)
+print(mylist)
+
+
+# Python - Join Lists
+# Join Two Lists
+# By using + operator
+
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+list3 = list1 + list2
+print(list3)
+
+# Another way to join two lists is by appending all the items from list2 into list1, one by one
+
+for x in list2:
+    list1.append(x)
+
+print(list1)
+
+# Or we can use the extend() method, which purpose is to add elements from one list to another list:
+list1.extend(list2)
+print(list1)
+
+# Python Tuples
+mytuple = ("apple", "banana", "cherry")
+
+# Tuple is ordered and unchangeable. It allows duplicates in its items.
+
+print(mytuple)
+
+for item in mytuple:
+    print(item)
+
+# Tuple Length
+print(len(mytuple))
+
+# Creating Tuple with One Item
+# To create a tuple with only one item, we have to add a comma after item, otherwose Python will not recognize it as a tuple
+this_not_tuple = ("apple")
+print(type(this_not_tuple))
+
+this_is_tuple = ("apple",)
+print(type(this_is_tuple))
+
+# Tuple Items - Data Types
+
+# Tuple items can be of any data type:
+
+# Tuple can contain different data types:
+
+# From Python's perspective, tuples are defined as objects with the data type 'tuple':
+
+# The tuple() Constructor
+
+# It is also possible to use the tuple() constructor to make a tuple
+
+# note the double round-brackets
+thistuple = tuple(("apple", "banana", "cherry"))
+print(thistuple)
