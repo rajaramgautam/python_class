@@ -423,3 +423,42 @@ print(type(this_is_tuple))
 # note the double round-brackets
 thistuple = tuple(("apple", "banana", "cherry"))
 print(thistuple)
+
+# Python - Access Tuple Items
+
+# We can access tuple items by referring to the index number, inside square brackets:
+
+print(thistuple[0])
+
+# Negative Indexing
+# Negative indexing means start from the end.
+
+print(thistuple[-1])
+
+# Range of Indexes:
+
+# Check if Item Exists
+
+if "apple" in thistuple:
+    print("Yes, apple is ther in tuple.")
+
+# Python - Update Tuples
+# Change Tuple Values
+# Once a tuple is created, you cannot change its values. Tuple are unchangeable, or immutable as it also called.
+# But there is a workaround. You can convert the tuple into a list, change the list, and convert the list bak into a tuple
+
+x = thistuple
+print(x)
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+print(x)
+
+
+# Add tuple to a tuple.
+# You are allowed to add tuples, so if you want to add one item, (or many), create a new tuple with the items(s),
+# and add it to the existing tuple:
+y = ("orange",)
+thistuple += y
+
+print(thistuple)
