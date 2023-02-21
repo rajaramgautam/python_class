@@ -462,3 +462,50 @@ y = ("orange",)
 thistuple += y
 
 print(thistuple)
+
+
+# Python - Unpack Tuples
+
+# Unpacking a Tuple
+
+fruits = ("apple", "banana", "cherry")
+
+# But, in python, we are also allowed to extract the values back into variables. This is called "unpacking":
+(green, yellow, red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+# If the number of variables is less than the number of values, you can add an * to the variabke name and the values
+# will be assigned to the variable as a list:
+
+fruits_1 = ("apple", "banana", "cherry", "strawberry", "raspberry")
+
+(green, yellow, *red) = fruits_1
+
+print(green)
+print(yellow)
+print(red)
+
+# If the asterisk is added to another variable name than the last, Python will assign values to the variable until
+# the number of values left matches the number of variables left.
+
+(green, *tropic, red) = fruits_1
+
+print(green)
+print(tropic)
+print(red)
+
+# Python - Loop Tuple
+
+# You can loop through the tuple items vy using a for loop.
+thistuple = ("apple", "banana", "cherry")
+
+for x in thistuple:
+    print(x)
+    
+# Loop through the index numbers
+
+# You can also loop through the tuple items by referring tp their index number.
+# Use the range() and len() functions to create a suitable iterable.
